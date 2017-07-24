@@ -1,0 +1,19 @@
+validator 依赖 bean validatino 1.1.0.Final
+目的是 同步前后端字符校验。通过使用同一份json配置文件达到相同配置的目的。
+validatorplus 设计原理，扩展javax.validation 支持目前常见的字符串 如手机号码 邮箱等。
+配置文件json 格式
+[
+    {
+        key:"phoneNumber",
+        message:"校验不通过的提示",
+        regexp:"/*"
+    }
+]
+将文件命名为validatorplus.json，放在classpath下 如果程序没有读取到配置文件，会启用缺省的正则表达式。
+支持自定义的注解配置 使用@ValidatorPlus(key="myValidatorKey")。
+只需要再配置文件中 加入
+{
+   key:"myValidatorKey",
+   message:"校验不通过的提示",
+   regexp:"/*"
+}
