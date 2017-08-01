@@ -7,6 +7,7 @@
     <groupId>validator-plus</groupId>
     <artifactId>cn.lgwen.validatorplus</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
     <dependencies>
         <dependency>
             <groupId>javax.validation</groupId>
@@ -66,5 +67,11 @@
                 </executions>
             </plugin>
         </plugins>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+            </resource>
+        </resources>
+        <sourceDirectory>src/main/java</sourceDirectory>
     </build>
 </project>

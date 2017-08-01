@@ -1,6 +1,6 @@
 package cn.lgwen.validatorplus.annotation;
 
-import com.lgwen.validatorplus.constraintvalidator.PhoneNumberValidator;
+import cn.lgwen.validatorplus.constraintvalidator.PhoneNumberValidator;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;
